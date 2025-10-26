@@ -1,7 +1,7 @@
 import React from "react";
 import About from "./About";
 import Footer from "./Footer";
-import Display from "../components/display";
+import Display from "../components/Display"
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 
@@ -37,6 +37,7 @@ const Home = () => {
       <Display />
       <About />
       <hr />
+      <Sample/>
       <Footer />
     </>
   );
