@@ -6,7 +6,6 @@ import Project from './pages/Project';
 import Skills from './pages/Skills';
 import Home from './pages/Home';
 import Aboutme from './pages/Aboutme';
-import Contact from './pages/Contact';
 const App = () => {
   return (
     <>
@@ -17,7 +16,6 @@ const App = () => {
           <Route path="/about" element={<Aboutme/>} />
           <Route path="/project" element={<Project/>} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </>
