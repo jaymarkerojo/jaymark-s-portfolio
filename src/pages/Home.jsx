@@ -37,7 +37,6 @@ const Home = () => {
       <Display />
       <About />
       <hr />
-      <Sample/>
       <Footer />
     </>
   );
