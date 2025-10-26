@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+::-webkit-scrollbar {
+  display: none;
+   width: 0;
+  height: 0;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+html, body {
+  overflow-y: scroll;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+}
+
+.autoShow{
+  animation: text-appear both;
+  animation-range: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  .autoShow {
+  opacity: 0;
+  animation: text-appear 1.2s ease-out forwards;
+}
+
+
+/* .carousel {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+  border: 3px solid red;
+  position: relative;
+} 
+  */
+
+.group {
+  display: flex;
+  align-items: center;
+  animation: scrollX 5s linear infinite; 
+  margin-top: 0%;
+} 
+
+.card {
+  flex: 0 0 2em;
+  margin-top: 0%;
+  height: 2em;
+  width: 1rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+@keyframes scrollX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
