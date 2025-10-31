@@ -35,11 +35,6 @@ const Aboutme = () => {
               alt="Profile"
               className="w-64 h-64 rounded-full object-cover"
             />
-
-            <button className="flex items-center gap-2 mt-4 px-5 py-2 cursor-pointer tracking-widest lowercase bg-white text-black rounded-2xl text-sm sm:text-base font-medium hover:bg-yellow-500 hover:text-white shadow-md transition duration-300 ease-in-out">
-              <HiDownload className="text-lg sm:text-xl" />
-              Download CV
-            </button>
           </div>
 
           <div>
